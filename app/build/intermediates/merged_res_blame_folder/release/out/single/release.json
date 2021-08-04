@@ -1,0 +1,322 @@
+[
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_tick.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_tick.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_main2.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_main2.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_fragment_my_contacts.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/fragment_my_contacts.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_account.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_account.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_circle_background.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/circle_background.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_attach_24.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_attach_24.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_circle_border.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/circle_border.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_baseline_videocam_off_24.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_baseline_videocam_off_24.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_gradient.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/gradient.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_send_black_24dp.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_send_black_24dp.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_fragment_feeds.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/fragment_feeds.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_main.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_input_background.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/input_background.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_curve_background.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/curve_background.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_add_icon.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/add_icon.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_item_message_to_image.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/item_message_to_image.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_developer.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_developer.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_logo2.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/logo2.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_item_contacts.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/item_contacts.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_fragment_chats_home.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/fragment_chats_home.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_logo.jpg.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/logo.jpg"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_logoicon.jpg.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/logoicon.jpg"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_chat_input_view.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/chat_input_view.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_baseline_hearing_24.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_baseline_hearing_24.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_forgrt_password.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_forgrt_password.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_message_to_call.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/message_to_call.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_login.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_wall2.jpg.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/wall2.jpg"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_chat.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_chat.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_bg_msg_from.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/bg_msg_from.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/navigation_mobile_navigation.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_rect_round_primary_color.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/rect_round_primary_color.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_camera_alt_black_24dp.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_camera_alt_black_24dp.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_baseline_mic_off_24.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_baseline_mic_off_24.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_home_black_24dp.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_main_recycler_item.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/main_recycler_item.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_edit_profile.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_add_contacts.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_add_contacts.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_items_feeds.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/items_feeds.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/menu_main_menu.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_developer_update.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_developer_update.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_item_message_from_image.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/item_message_from_image.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_fragment_profile.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_add_feeds.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_add_feeds.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_signup.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_signup.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_baseline_mic_24.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_baseline_mic_24.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_dev.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/dev.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_baseline_videocam_24.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_baseline_videocam_24.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_start.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_start.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_message_to.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/message_to.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_baseline_call_end_24.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_baseline_call_end_24.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_baseline_speaker_up_24.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_baseline_speaker_up_24.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_item_message_from.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/item_message_from.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/menu_menu_chat.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/menu/menu_chat.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_ic_baseline_cameraswitch_24.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_baseline_cameraswitch_24.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_spalsh_screen.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_spalsh_screen.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_profile.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/menu_bottom_nav_menu.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_loginpage_secret.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_loginpage_secret.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_item_add_contact_list.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/item_add_contact_list.xml"
+    },
+    {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_item_message_to.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/item_message_to.xml"
+    }
+]

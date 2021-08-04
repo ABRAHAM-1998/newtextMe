@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TeX~Me</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_contacts">CONTACTS</string>
+    <string name="title_feeds">FEEDS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="messagedelete">THIS MESSEAGE IS DELEATED</string>
+    <string name="pref_speakerphone_key">speakerphone_preference</string>
+    <string name="pref_speakerphone_default">auto</string>
+    <string name="Profile" />
+
+    <string name="text_link_ehs"> <a href=""></a></string>
+</resources>

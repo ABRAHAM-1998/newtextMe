@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.twentytwo.textme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TexTMe">
+        <activity
+            android:name=".ACTIVITIES_SEC.forgrtPassword"
+            android:exported="true" />
+        <activity
+            android:name=".ACTIVITIES_SEC.Developer_Update"
+            android:exported="true" />
+        <activity
+            android:name=".ACTIVITIES_SEC.LOGINPAGE_SECRET"
+            android:exported="true" />
+        <activity
+            android:name=".ACTIVITIES_SEC.DeveloperActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ACTIVITIES_SEC.EditProfile"
+            android:exported="true" />
+        <activity android:name=".ui.FEEDS.ADD_FEEDS" />
+        <activity android:name=".webrtccall.MainActivity" />
+        <activity
+            android:name=".ACTIVITIES_SEC.SpalshScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ACTIVITIES_SEC.ProfileActivity" />
+        <activity android:name=".ui.CONTACTS.ADD_CONTACTS" />
+        <activity
+            android:name=".ui.CHATS.ChatActivity"
+            android:theme="@style/Theme.TexTMe" />
+        <activity android:name=".ACTIVITIES_SEC.SignupActivity" />
+        <activity android:name=".ACTIVITIES_SEC.LoginActivity" /> <!-- optional (needed if default theme has no action bar) -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- FCM -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_account" />
+
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".webrtccall.RTCActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:forceDarkAllowed="false"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="12dp">
+
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="135dp"
+        android:layout_margin="4dp"
+        android:scrollbarSize="1dp">
+
+
+        <ImageView
+            android:id="@+id/main_rec_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:forceDarkAllowed="false"
+            app:srcCompat="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/deletePost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_rec_logo"
+            android:text="DELETE"
+            android:textAlignment="center"
+            android:textColor="#F60808"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

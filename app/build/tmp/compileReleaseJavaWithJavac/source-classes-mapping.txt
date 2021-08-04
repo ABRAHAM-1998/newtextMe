@@ -1,0 +1,60 @@
+com/twentytwo/textme/databinding/ActivityProfileBinding.java
+ com.twentytwo.textme.databinding.ActivityProfileBinding
+com/twentytwo/textme/databinding/ActivityStartBinding.java
+ com.twentytwo.textme.databinding.ActivityStartBinding
+com/twentytwo/textme/databinding/ActivityMainBinding.java
+ com.twentytwo.textme.databinding.ActivityMainBinding
+com/twentytwo/textme/databinding/ItemContactsBinding.java
+ com.twentytwo.textme.databinding.ItemContactsBinding
+com/twentytwo/textme/databinding/FragmentMyContactsBinding.java
+ com.twentytwo.textme.databinding.FragmentMyContactsBinding
+com/twentytwo/textme/databinding/FragmentProfileBinding.java
+ com.twentytwo.textme.databinding.FragmentProfileBinding
+com/twentytwo/textme/databinding/ItemAddContactListBinding.java
+ com.twentytwo.textme.databinding.ItemAddContactListBinding
+com/twentytwo/textme/databinding/ActivityDeveloperUpdateBinding.java
+ com.twentytwo.textme.databinding.ActivityDeveloperUpdateBinding
+com/twentytwo/textme/databinding/ItemMessageToBinding.java
+ com.twentytwo.textme.databinding.ItemMessageToBinding
+com/twentytwo/textme/databinding/ActivitySpalshScreenBinding.java
+ com.twentytwo.textme.databinding.ActivitySpalshScreenBinding
+com/twentytwo/textme/databinding/ActivityLoginBinding.java
+ com.twentytwo.textme.databinding.ActivityLoginBinding
+com/twentytwo/textme/databinding/ActivityAddContactsBinding.java
+ com.twentytwo.textme.databinding.ActivityAddContactsBinding
+com/twentytwo/textme/databinding/ActivityChatBinding.java
+ com.twentytwo.textme.databinding.ActivityChatBinding
+com/twentytwo/textme/databinding/FragmentChatsHomeBinding.java
+ com.twentytwo.textme.databinding.FragmentChatsHomeBinding
+com/twentytwo/textme/databinding/ItemMessageToImageBinding.java
+ com.twentytwo.textme.databinding.ItemMessageToImageBinding
+com/twentytwo/textme/databinding/ActivitySignupBinding.java
+ com.twentytwo.textme.databinding.ActivitySignupBinding
+com/twentytwo/textme/databinding/ActivityDeveloperBinding.java
+ com.twentytwo.textme.databinding.ActivityDeveloperBinding
+com/twentytwo/textme/databinding/ActivityAddFeedsBinding.java
+ com.twentytwo.textme.databinding.ActivityAddFeedsBinding
+com/twentytwo/textme/databinding/ActivityForgrtPasswordBinding.java
+ com.twentytwo.textme.databinding.ActivityForgrtPasswordBinding
+com/twentytwo/textme/databinding/ItemMessageFromImageBinding.java
+ com.twentytwo.textme.databinding.ItemMessageFromImageBinding
+com/twentytwo/textme/databinding/ItemsFeedsBinding.java
+ com.twentytwo.textme.databinding.ItemsFeedsBinding
+com/twentytwo/textme/databinding/ActivityEditProfileBinding.java
+ com.twentytwo.textme.databinding.ActivityEditProfileBinding
+com/twentytwo/textme/databinding/ActivityLoginpageSecretBinding.java
+ com.twentytwo.textme.databinding.ActivityLoginpageSecretBinding
+com/twentytwo/textme/DataBindingTriggerClass.java
+ com.twentytwo.textme.DataBindingTriggerClass
+com/twentytwo/textme/databinding/ActivityMain2Binding.java
+ com.twentytwo.textme.databinding.ActivityMain2Binding
+com/twentytwo/textme/databinding/ItemMessageFromBinding.java
+ com.twentytwo.textme.databinding.ItemMessageFromBinding
+com/twentytwo/textme/databinding/FragmentFeedsBinding.java
+ com.twentytwo.textme.databinding.FragmentFeedsBinding
+com/twentytwo/textme/databinding/ChatInputViewBinding.java
+ com.twentytwo.textme.databinding.ChatInputViewBinding
+com/twentytwo/textme/BuildConfig.java
+ com.twentytwo.textme.BuildConfig
+com/twentytwo/textme/databinding/MainRecyclerItemBinding.java
+ com.twentytwo.textme.databinding.MainRecyclerItemBinding

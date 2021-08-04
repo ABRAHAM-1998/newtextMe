@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/logout_tile"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/teal_200"
+        android:icon="@drawable/ic_baseline_videocam_24"
+        android:title="LogOut">
+    </item>
+    <item
+        android:title="Profile"
+        app:showAsAction="never"
+        android:id="@+id/note_profile" />
+    <item
+        android:id="@+id/note_settings"
+        android:title="Settings"
+        android:iconTint="@color/white"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/developerid"
+        android:title="DEVELOPER"
+        android:iconTint="#F30D0D"
+        app:showAsAction="never" />
+</menu>
