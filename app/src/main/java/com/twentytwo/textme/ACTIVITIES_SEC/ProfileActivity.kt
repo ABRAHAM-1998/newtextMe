@@ -61,11 +61,12 @@ class ProfileActivity : AppCompatActivity() {
         val ImagePrewiew: ImageView = findViewById(R.id.ImagePrewiew)
         val editprofile = findViewById<Button>(R.id.bt_editProfile)
         var LogOutBtm = findViewById<TextView>(R.id.LogOutBtm)
+
         LogOutBtm.visibility = View.INVISIBLE
         editprofile.visibility = View.INVISIBLE
 
 
-        //================================================================================
+        //=======================================================================================================================================
         if (intent.hasExtra("touserId")) {
             val bundle = intent.extras
             if (bundle!!.getString("touserId") != null) {
@@ -95,6 +96,8 @@ class ProfileActivity : AppCompatActivity() {
                                 NameUser = users.name
 
                                 val editprofile = findViewById<Button>(R.id.bt_editProfile)
+
+
                                 val sendMessageProfile =
                                     findViewById<Button>(R.id.sendMessageProfile)
                                 sendMessageProfile.visibility = View.VISIBLE
@@ -105,21 +108,16 @@ class ProfileActivity : AppCompatActivity() {
                                     startActivity(intent)
                                 }
                             }
-
-
                         }
                     }
                 }
-                ///////////////////////////
-
-
+//--------------------------------------------------------------------------------------------------------------------
                 gridLayoutManager =
                     GridLayoutManager(applicationContext, 3, LinearLayoutManager.VERTICAL, false)
 
                 reccyclerViewMain = findViewById<RecyclerView>(R.id.main_recyclerView)
                 reccyclerViewMain?.layoutManager = gridLayoutManager
                 reccyclerViewMain?.setHasFixedSize(true)
-                ///////////////////////
 
                 val query = db.collection("FEEDS")
                     .whereEqualTo("uid", mUser)
@@ -134,21 +132,12 @@ class ProfileActivity : AppCompatActivity() {
                         reccyclerViewMain?.adapter = alphaAdapters
                     }
                 }
-
-
             } else {
-
             }
-        } else {
-
-
-//============================================================================
-
-
-
+        } else if(!intent.hasExtra("touserId")){
+//================================================================================================================================================
             val uid = FirebaseAuth.getInstance().currentUser?.uid
             val db = Firebase.firestore
-
 
             val docRef = db.collection("UserSegment").document("$uid")
             docRef.get().addOnCompleteListener { task ->
@@ -185,17 +174,12 @@ class ProfileActivity : AppCompatActivity() {
                                 val intent = Intent(this, EditProfile::class.java)
                                 intent.putExtra("userdetails", users)
                                 startActivity(intent)
-
                             }
                         }
-
-
                     }
                 }
             }
-            ///////////////////////////
-
-
+//-------------------------------------------------------------------------------------------------------------------------
             gridLayoutManager =
                 GridLayoutManager(applicationContext, 3, LinearLayoutManager.VERTICAL, false)
 
@@ -220,7 +204,7 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    //===================================A=L=E=R=T==L=O==G=O=U=T=====================
+    //===================================A=L=E=R=T==L=O==G=O=U=T===========================================================================
     private fun showAlert() {
         lateinit var dialog: AlertDialog
         val alertDialog: AlertDialog.Builder = AlertDialog.Builder(this)
@@ -246,13 +230,15 @@ class ProfileActivity : AppCompatActivity() {
         dialog.show()
     }
 
+    //===================================================================================================================================
     private fun signOut() {
         FirebaseAuth.getInstance().signOut()
-        var intent =Intent(this, LoginActivity::class.java)
+        var intent = Intent(this, LoginActivity::class.java)
 
         intent.flags =
             Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
         finish()
     }
+    //=============================================================================================================================
 }

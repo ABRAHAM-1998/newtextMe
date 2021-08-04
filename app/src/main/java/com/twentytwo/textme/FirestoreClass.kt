@@ -1,14 +1,9 @@
 package com.twentytwo.textme
 
-import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
-import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.util.Log
-import android.view.LayoutInflater
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.getSystemService
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
@@ -21,7 +16,6 @@ import com.twentytwo.textme.ACTIVITIES_SEC.Developer_Update
 import com.twentytwo.textme.ACTIVITIES_SEC.ProfileActivity
 import com.twentytwo.textme.ACTIVITIES_SEC.SignupActivity
 import com.twentytwo.textme.Model.*
-import com.twentytwo.textme.ui.CHATS.ChatActivity
 import com.twentytwo.textme.ui.FEEDS.ADD_FEEDS
 import java.text.SimpleDateFormat
 import java.util.*
@@ -48,7 +42,12 @@ class FirestoreClass {
             .set(userInfo, SetOptions.merge())
             .addOnSuccessListener {
                 val user = Users(
-                    userInfo.uid, userInfo.proFileImageUrl, userInfo.name, "","its me! TeXt~Me!","",
+                    userInfo.uid,
+                    userInfo.proFileImageUrl,
+                    userInfo.name,
+                    "",
+                    "its me! TeXt~Me!",
+                    "",
                     mutableListOf()
                 )
                 mFireStore.collection("UserSegment")
@@ -98,11 +97,20 @@ class FirestoreClass {
 
     fun sendMessage(message: TextMessage?, channelId: String) {
         if (message != null) {
-            chatChannelsCollectionRef.document(channelId)
-                .collection("messages")
-                .add(message)
+            val mesgeId = chatChannelsCollectionRef.document(channelId)
+                .collection("messages").document().id.toString()
+             message.messageID = mesgeId
+            if (mesgeId != ""){
+                chatChannelsCollectionRef.document(channelId)
+                    .collection("messages")
+                    .document(mesgeId)
+                    .set(message)
+            }
+
+
         }
     }
+
     //////
     // /
     fun createIdCards(activity: ADD_FEEDS, certdata: Feeds) {
@@ -170,13 +178,12 @@ class FirestoreClass {
                 if (snapshot != null && snapshot.exists()) {
 
                     //==========================================
-                    val dataSet = statustyping("",currentChannelId,Calendar.getInstance().time)
+                    val dataSet = statustyping("", currentChannelId, Calendar.getInstance().time)
                     chatChannelsCollectionRef.document(currentChannelId).collection("status")
                         .document(currentUserId)
                         .set(dataSet)
 
                     //======================================================================
-
 
 
                     var data = snapshot.getString("typing") as String
@@ -211,7 +218,7 @@ class FirestoreClass {
                             if (day2day == today) {
 
                                 if (hN >= hS && mN >= mS) {
-                                    if (hN - hS <= 0 &&  (mN - mS) == 0) {
+                                    if (hN - hS <= 0 && (mN - mS) == 0) {
 
                                         onComplete("online")
                                     } else {
@@ -224,7 +231,7 @@ class FirestoreClass {
                                     }
                                 }
                                 if ((hN - hS) == 0) {
-                                    if ( (mN - mS) == 0) {
+                                    if ((mN - mS) == 0) {
                                         onComplete("online")
                                     } else {
                                         onComplete(displayDate)
@@ -247,6 +254,7 @@ class FirestoreClass {
 
             }
     }
+
     fun CreateDEV(activity: Developer_Update, devUpate: devUpate) {
         mFireStore.collection("DEVELOPER").document("SECRET")
             .set(devUpate, SetOptions.merge())
@@ -257,6 +265,7 @@ class FirestoreClass {
                 activity.DevFAILED()
             }
     }
+
     fun DeleteFeed(uploadedTiem: Date?, imagePath: String, context: Context) {
         val uid = FirebaseAuth.getInstance().currentUser?.uid
         val db = Firebase.firestore
@@ -270,7 +279,8 @@ class FirestoreClass {
             // File deleted successfully
             db.collection("FEEDS").document(uploadedTiem.toString())
                 .delete()
-                .addOnSuccessListener { Log.d("TAG", "DocumentSnapshot successfully deleted!")
+                .addOnSuccessListener {
+                    Log.d("TAG", "DocumentSnapshot successfully deleted!")
                     val intent = Intent(context, ProfileActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
                     context.startActivity(intent)
@@ -278,6 +288,34 @@ class FirestoreClass {
                 .addOnFailureListener { e -> Log.w("TAG", "Error deleting document", e) }
         }?.addOnFailureListener {
             // Uh-oh, an error occurred!
+        }
+
+    }
+
+    fun deleteCatImage(imagePath: String, messageId: String, currentChannelId: String) {
+        val uid = FirebaseAuth.getInstance().currentUser?.uid
+        val db = Firebase.firestore
+
+        if (imagePath =="") {
+            db.collection("chatChannels").document(currentChannelId).collection("messages")
+                .document(messageId)
+                .delete()
+                .addOnSuccessListener {
+                }
+                .addOnFailureListener { e -> Log.w("TAG", "Error deleting document", e) }
+        }else {
+            val storageRef = FirebaseStorage.getInstance().getReferenceFromUrl(imagePath)
+            storageRef.delete().addOnSuccessListener {
+
+                db.collection("chatChannels").document(currentChannelId).collection("messages")
+                    .document(messageId)
+                    .delete()
+                    .addOnSuccessListener {
+                    }
+                    .addOnFailureListener { e -> Log.w("TAG", "Error deleting document", e) }
+            }?.addOnFailureListener {
+                // Uh-oh, an error occurred!
+            }
         }
 
     }

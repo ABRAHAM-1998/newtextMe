@@ -16,4 +16,5 @@ interface Message {
     val recipientId: String
     val senderName: String
     val type: String
+    val messageID: String
 }

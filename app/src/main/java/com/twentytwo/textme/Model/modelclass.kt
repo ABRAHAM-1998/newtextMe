@@ -55,9 +55,11 @@ data class TextMessage(
     override val senderId: String,
     override val recipientId: String,
     override var senderName: String,
-    override val type: String = "", override val seen: Int
+    override val type: String = "",
+    override val seen: Int,
+    override var messageID: String=""
 ) : Message {
-    constructor() : this("", "", Date(0), "", "", "", "", 0)
+    constructor() : this("", "", Date(0), "", "", "", "", 0,"")
 }
 
 data class Feeds(

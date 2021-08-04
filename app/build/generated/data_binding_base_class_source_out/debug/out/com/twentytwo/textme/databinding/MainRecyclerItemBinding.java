@@ -4,9 +4,9 @@ package com.twentytwo.textme.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -21,7 +21,7 @@ public final class MainRecyclerItemBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final TextView deletePost;
+  public final Button deletePost;
 
   @NonNull
   public final ImageView mainRecLogo;
@@ -29,7 +29,7 @@ public final class MainRecyclerItemBinding implements ViewBinding {
   @NonNull
   public final ProgressBar progressBar;
 
-  private MainRecyclerItemBinding(@NonNull CardView rootView, @NonNull TextView deletePost,
+  private MainRecyclerItemBinding(@NonNull CardView rootView, @NonNull Button deletePost,
       @NonNull ImageView mainRecLogo, @NonNull ProgressBar progressBar) {
     this.rootView = rootView;
     this.deletePost = deletePost;
@@ -65,7 +65,7 @@ public final class MainRecyclerItemBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.deletePost;
-      TextView deletePost = rootView.findViewById(id);
+      Button deletePost = rootView.findViewById(id);
       if (deletePost == null) {
         break missingId;
       }

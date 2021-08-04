@@ -4,9 +4,9 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
@@ -22,8 +22,9 @@ class Main_Adapter_cycle(
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var main_rec_img = itemView.findViewById<ImageView>(R.id.main_rec_logo)
-        var deleteP = itemView.findViewById<TextView>(R.id.deletePost)
+        var deleteP = itemView.findViewById<Button>(R.id.deletePost)
         var progressBar = itemView.findViewById<ProgressBar>(R.id.progressBar)
+
 
     }
 
@@ -38,13 +39,17 @@ class Main_Adapter_cycle(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val maindata: Feeds = main_data_list.get(position)
-        holder.deleteP.setOnClickListener {
-            val uid = FirebaseAuth.getInstance().currentUser?.uid
-            if (maindata.uid == uid)
-                holder.progressBar.visibility =View.VISIBLE
-                FirestoreClass().DeleteFeed(maindata.uploadedTiem, maindata.imagePath, contex)
-
-
+        val uid = FirebaseAuth.getInstance().currentUser?.uid
+        if (uid == maindata.uid) {
+            holder.main_rec_img.setOnClickListener {
+                holder.deleteP.visibility = View.VISIBLE
+            }
+            holder.deleteP.setOnClickListener {
+                if (maindata.uid == uid) {
+                    holder.progressBar.visibility = View.VISIBLE
+                    FirestoreClass().DeleteFeed(maindata.uploadedTiem, maindata.imagePath, contex)
+                }
+            }
         }
 
         Glide.with(contex)

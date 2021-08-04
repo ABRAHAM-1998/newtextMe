@@ -2,19 +2,19 @@ package com.twentytwo.textme.ui.CHATS
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
-import android.os.Looper
 import android.provider.MediaStore
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.view.*
 import android.widget.*
-import androidx.annotation.WorkerThread
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -26,7 +26,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.google.firebase.database.ktx.database
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
@@ -34,7 +33,6 @@ import com.google.firebase.ktx.Firebase
 import com.twentytwo.textme.FirestoreClass
 import com.twentytwo.textme.Model.*
 import com.twentytwo.textme.R
-import com.twentytwo.textme.RETROFIT.SocketHandler
 import com.twentytwo.textme.StorageUtil
 import com.twentytwo.textme.webrtccall.Constants
 import com.twentytwo.textme.webrtccall.RTCActivity
@@ -45,17 +43,11 @@ import java.text.SimpleDateFormat
 import java.util.*
 import android.widget.Toast
 import com.twentytwo.textme.ACTIVITIES_SEC.DeveloperActivity
-import com.twentytwo.textme.ACTIVITIES_SEC.EditProfile
 import com.twentytwo.textme.ACTIVITIES_SEC.ProfileActivity
 import com.twentytwo.textme.RETROFIT.RetrofitClient
-import com.twentytwo.textme.RETROFIT.defaultresponse
-import com.twentytwo.textme.RETROFIT.result
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 
 private const val RC_SELECT_IMAGE = 2
@@ -183,7 +175,16 @@ class ChatActivity : AppCompatActivity() {
         }
 //================================================================================================================================
         val fab_send_image = findViewById<ImageView>(R.id.addAttachment)
+        val takePicture = findViewById<ImageButton>(R.id.takePicture)
         fab_send_image.setOnClickListener {
+            val intent = Intent().apply {
+                type = "image/*"
+                action = Intent.ACTION_GET_CONTENT
+                putExtra(Intent.EXTRA_MIME_TYPES, arrayOf("image/jpeg", "image/png"))
+            }
+            startActivityForResult(Intent.createChooser(intent, "Select Image"), RC_SELECT_IMAGE)
+        }
+        takePicture.setOnClickListener {
             val intent = Intent().apply {
                 type = "image/*"
                 action = Intent.ACTION_GET_CONTENT
@@ -295,10 +296,24 @@ class ChatActivity : AppCompatActivity() {
                 textView.text = message.text
                 val message_root = view.findViewById<RelativeLayout>(R.id.message_root)
                 message_root.setBackgroundResource(R.drawable.message_to)
+            }else if(!message.text.isEmpty() && message.senderId == fromUid){
+                val textView = view.findViewById<TextView>(R.id.text_view)
+                textView.setOnLongClickListener {
+                    if (message.senderId == fromUid && message.seen == 1 && message.imagePath =="") {
+                        showAlert(message.imagePath, message.messageID)
+                    }
+                    return@setOnLongClickListener true
+                }
             }
 
             if (message.imagePath.isNotEmpty()) {
                 val imageView = view.findViewById<ImageView>(R.id.imageView)
+                imageView.setOnLongClickListener {
+                    if (message.senderId == fromUid && message.seen == 1) {
+                        showAlert(message.imagePath, message.messageID)
+                    }
+                    return@setOnLongClickListener true
+                }
                 Glide.with(this@ChatActivity)
                     .load(message.imagePath)
                     .into(imageView)
@@ -350,6 +365,30 @@ class ChatActivity : AppCompatActivity() {
             }
         }
     }
+    private fun showAlert(imagePath: String, MessageId: String) {
+        lateinit var dialog: AlertDialog
+        val alertDialog: AlertDialog.Builder = AlertDialog.Builder(this)
+        alertDialog.setTitle("TeXt~Me")
+        alertDialog.setMessage("DO YOU WANT TO DELETE THIS IMAGE? ")
+
+        val dilaogOnClickListener = DialogInterface.OnClickListener { _, which ->
+            when (which) {
+                DialogInterface.BUTTON_NEGATIVE -> Toast.makeText(
+                    this,
+                    "Dismissed",
+                    Toast.LENGTH_SHORT
+                ).show()
+                DialogInterface.BUTTON_POSITIVE -> {
+                    FirestoreClass().deleteCatImage(imagePath, MessageId,currentChannelId)
+                    Toast.makeText(this, "DELETED", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+        alertDialog.setPositiveButton("yes", dilaogOnClickListener)
+        alertDialog.setNegativeButton("no", dilaogOnClickListener)
+        dialog = alertDialog.create()
+        dialog.show()
+    }
 
     @KtorExperimentalAPI
     private fun joinVideoCall(senderName: String) {
@@ -399,6 +438,7 @@ class ChatActivity : AppCompatActivity() {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
         override fun getItemViewType(position: Int): Int {
+
             if (fromUid != getItem(position).senderId && getItem(position).imagePath.isEmpty()) {
                 return R.layout.item_message_to
             } else if (fromUid == getItem(position).senderId && getItem(position).imagePath.isEmpty()) {
@@ -536,10 +576,9 @@ class ChatActivity : AppCompatActivity() {
                     toUid,
                     id,
                     "video",
-                    0
+                    0,""
                 )
             }
         FirestoreClass().sendMessage(messageToSend, currentChannelId)
     }
-
 }
