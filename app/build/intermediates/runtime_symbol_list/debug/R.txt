@@ -1854,6 +1854,8 @@ int id CTRL 0x7f080003
 int id ContactsImage 0x7f080004
 int id CropOverlayView 0x7f080005
 int id CropProgressBar 0x7f080006
+int id FAQ_delete_chat 0x7f080255
+int id FAQ_forgetpassword 0x7f080256
 int id FBID 0x7f080007
 int id FG 0x7f080008
 int id FS 0x7f080009
@@ -2379,6 +2381,7 @@ int id textSpacerNoTitle 0x7f080210
 int id textStart 0x7f080211
 int id textTime 0x7f080212
 int id textTop 0x7f080213
+int id textView 0x7f080257
 int id textView3 0x7f080214
 int id textView4 0x7f080215
 int id textView5 0x7f080216
@@ -2512,6 +2515,7 @@ int layout activity_chat 0x7f0b001e
 int layout activity_developer 0x7f0b001f
 int layout activity_developer_update 0x7f0b0020
 int layout activity_edit_profile 0x7f0b0021
+int layout activity_faq 0x7f0b0097
 int layout activity_forgrt_password 0x7f0b0022
 int layout activity_login 0x7f0b0023
 int layout activity_loginpage_secret 0x7f0b0024

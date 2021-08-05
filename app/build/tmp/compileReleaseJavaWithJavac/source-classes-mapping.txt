@@ -40,6 +40,8 @@ com/twentytwo/textme/databinding/ItemMessageFromImageBinding.java
  com.twentytwo.textme.databinding.ItemMessageFromImageBinding
 com/twentytwo/textme/databinding/ItemsFeedsBinding.java
  com.twentytwo.textme.databinding.ItemsFeedsBinding
+com/twentytwo/textme/databinding/ActivityFaqBinding.java
+ com.twentytwo.textme.databinding.ActivityFaqBinding
 com/twentytwo/textme/databinding/ActivityEditProfileBinding.java
  com.twentytwo.textme.databinding.ActivityEditProfileBinding
 com/twentytwo/textme/databinding/ActivityLoginpageSecretBinding.java

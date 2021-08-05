@@ -68,6 +68,7 @@
             android:layout_below="@+id/L1">
 
             <TextView
+                android:textColor="@color/black"
                 android:id="@+id/feed_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,10 +96,11 @@
 
         <TextView
             android:id="@+id/feed_desc"
-            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView"
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
             android:text="descreption"
             android:textSize="12sp"
             tools:text="this ia vwery descreption of about some thing" />

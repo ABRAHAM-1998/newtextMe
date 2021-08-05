@@ -1,15 +1,20 @@
 package com.twentytwo.textme.ui.home
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import com.bumptech.glide.Glide
+import com.twentytwo.textme.ACTIVITIES_SEC.ProfileActivity
+import com.twentytwo.textme.FirestoreClass
 import com.twentytwo.textme.Model.Feeds
 import com.twentytwo.textme.Model.Users
+import com.twentytwo.textme.Model.feedsLike
 import com.twentytwo.textme.R
 
 class MyListAdapter(context: Context, var items: List<Users>) :
@@ -27,6 +32,11 @@ class MyListAdapter(context: Context, var items: List<Users>) :
         var person: Users = items[position]
         textView.text = person.descreption
         textView1.text = person.name
+        ContactsImage.setOnClickListener {
+            val intent = Intent(context, ProfileActivity::class.java)
+            intent.putExtra("touserId", person.uid)
+           context.startActivity(intent)
+        }
         Glide.with(context)
             .load(person.proFileImageUrl)
             .placeholder(R.drawable.ic_launcher_background)
@@ -58,6 +68,11 @@ class FeedsAdapter(context: Context, var items: List<Feeds>) :
         descreption.text = itemsfeed.descreption
         location.text = itemsfeed.location
         feedDate.text = itemsfeed.uploadedTiem.toString().take(20)
+        ContactsImage.setOnClickListener {
+            val intent = Intent(context, ProfileActivity::class.java)
+            intent.putExtra("touserId", itemsfeed.uid)
+            context.startActivity(intent)
+        }
         Glide.with(context)
             .load(itemsfeed.profileUrl)
             .placeholder(R.drawable.logo2)

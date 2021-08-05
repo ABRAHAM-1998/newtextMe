@@ -113,18 +113,7 @@ class FirestoreClass {
 
     //////
     // /
-    fun createIdCards(activity: ADD_FEEDS, certdata: Feeds) {
-        mFireStore.collection("FEEDS").document(certdata.uploadedTiem.toString())
-            .set(certdata, SetOptions.merge())
-            .addOnSuccessListener {
-                activity.certiSuccess()
-            }
-            .addOnFailureListener {
-                activity.Certifail()
-            }
 
-    }
-    //////
 
     //Image sceen by
     fun seen(touserid: String, channelId: String) {
@@ -317,6 +306,24 @@ class FirestoreClass {
                 // Uh-oh, an error occurred!
             }
         }
+
+    }
+    fun createIdCards(activity: ADD_FEEDS, certdata: Feeds) {
+        mFireStore.collection("FEEDS").document(certdata.uploadedTiem.toString())
+            .set(certdata, SetOptions.merge())
+            .addOnSuccessListener {
+                activity.certiSuccess()
+            }
+            .addOnFailureListener {
+                activity.Certifail()
+            }
+
+    }
+    //////
+    fun likeUser(lkeuserda: MutableList<String>?, uploadedTiem: Date?) {
+        mFireStore.collection("FEEDS")
+            .document(uploadedTiem.toString())
+            .update(mapOf("likesuer" to lkeuserda))
 
     }
 

@@ -43,6 +43,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TexTMe" >
         <activity
+            android:name="com.twentytwo.textme.ACTIVITIES_SEC.FAQ"
+            android:exported="true" />
+        <activity
             android:name="com.twentytwo.textme.ACTIVITIES_SEC.forgrtPassword"
             android:exported="true" />
         <activity

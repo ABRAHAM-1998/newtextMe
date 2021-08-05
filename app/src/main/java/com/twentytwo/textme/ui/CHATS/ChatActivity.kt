@@ -133,25 +133,7 @@ class ChatActivity : AppCompatActivity() {
             val edit_text = findViewById<EditText>(R.id.edit_text)
             //////////////////////////////////////////////////////////////////////////////////////////
 
-            edit_text.addTextChangedListener(object : TextWatcher {
-                override fun afterTextChanged(s: Editable)
-                {
 
-                }
-                override fun beforeTextChanged(
-                    s: CharSequence, start: Int,
-                    count: Int, after: Int
-                ) {
-
-                }
-                override fun onTextChanged(
-                    s: CharSequence, start: Int,
-                    before: Int, count: Int
-                ) {
-
-                }
-            })
-            //================================
             button.setOnClickListener {
                 var messageText = edit_text.text.toString()
                 val messageToSend =
@@ -215,40 +197,7 @@ class ChatActivity : AppCompatActivity() {
 
                 recycler_view.layoutManager = LinearLayoutManager(this@ChatActivity)
 
-                val itemTouchHelperCallback =
-                    object :
-                        ItemTouchHelper.SimpleCallback(
-                            0,
-                            ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
-                        ) {
-                        override fun onMove(
-                            recyclerView: RecyclerView,
-                            viewHolder: RecyclerView.ViewHolder,
-                            target: RecyclerView.ViewHolder
-                        ) = false
-
-                        override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-                            val position = viewHolder.adapterPosition
-                            Snackbar.make(
-                                chatshome, // The ID of your coordinator_layout
-                                getString(R.string.messagedelete),
-                                Snackbar.LENGTH_LONG
-                            ).apply {
-                                setAction("Deleted") {
-                                    // If you're not using LiveData you might need to tell the adapter
-                                    // that an item was inserted: notifyItemInserted(position);
-                                    recycler_view.scrollToPosition(position)
-                                }
-                                setActionTextColor(Color.RED)
-                            }.show()
-
-
-                        }
-                    }
-                ItemTouchHelper(itemTouchHelperCallback).apply {
-                    attachToRecyclerView(recycler_view)
-                }
-            }
+                            }
         }, 500)
     }
 

@@ -16,6 +16,10 @@
         "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_forgrt_password.xml"
     },
     {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_faq.xml",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_faq.xml"
+    },
+    {
         "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_developer_update.xml",
         "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_developer_update.xml"
     },

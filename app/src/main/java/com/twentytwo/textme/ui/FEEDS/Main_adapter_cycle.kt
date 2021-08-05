@@ -41,8 +41,9 @@ class Main_Adapter_cycle(
         val maindata: Feeds = main_data_list.get(position)
         val uid = FirebaseAuth.getInstance().currentUser?.uid
         if (uid == maindata.uid) {
-            holder.main_rec_img.setOnClickListener {
+            holder.main_rec_img.setOnLongClickListener {
                 holder.deleteP.visibility = View.VISIBLE
+                return@setOnLongClickListener true
             }
             holder.deleteP.setOnClickListener {
                 if (maindata.uid == uid) {

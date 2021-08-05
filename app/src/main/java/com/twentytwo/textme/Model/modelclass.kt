@@ -9,8 +9,8 @@ data class Users(
     val proFileImageUrl: String = "",
     val name: String = "",
     val lastseen: String = "",
-    val descreption: String="",
-    val nickname:String="",
+    val descreption: String = "",
+    val nickname: String = "",
     val registrationTokens: MutableList<String>? = null,
 ) : Serializable
 
@@ -57,38 +57,45 @@ data class TextMessage(
     override var senderName: String,
     override val type: String = "",
     override val seen: Int,
-    override var messageID: String=""
+    override var messageID: String = ""
 ) : Message {
-    constructor() : this("", "", Date(0), "", "", "", "", 0,"")
+    constructor() : this("", "", Date(0), "", "", "", "", 0, "")
 }
 
 data class Feeds(
-    val uid:String="",
-    val imagePath: String="",
-    val location:String="",
-    val title:String="",
-    val descreption: String="",
-    val uploadedTiem:Date?=null,
-    val profileUrl: String=""
+    val uid: String = "",
+    val imagePath: String = "",
+    val location: String = "",
+    val title: String = "",
+    val descreption: String = "",
+    val uploadedTiem: Date? = null,
+    val profileUrl: String = "",
 )
-data class  certific(
+
+data class feedsLike(
+    val likesuer: MutableList<String>? = null,
+)
+
+data class certific(
     val id: String = "",
-    val name:String ="",
-    val profileUrl: String ="",
+    val name: String = "",
+    val profileUrl: String = "",
     val imgUrl: String = "",
     val descreption: String = "",
-    val location:String="",
+    val location: String = "",
     val created: String = ""
+
 )
 
 data class typing(
     var uid: String = "",
-    var channelid:String=""
+    var channelid: String = ""
 )
+
 data class devUpate(
-    val followers: String ="",
+    val followers: String = "",
     val following: String = "",
-    val instalink: String ="",
+    val instalink: String = "",
     val facebooklink: String = "",
-    val weblink: String =""
+    val weblink: String = ""
 )

@@ -10,6 +10,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.firestore.FirebaseFirestore
 import com.twentytwo.textme.ACTIVITIES_SEC.DeveloperActivity
+import com.twentytwo.textme.ACTIVITIES_SEC.FAQ
 import com.twentytwo.textme.ACTIVITIES_SEC.LoginActivity
 import com.twentytwo.textme.ACTIVITIES_SEC.ProfileActivity
 import com.twentytwo.textme.Model.Users
@@ -151,9 +152,7 @@ class ChatsHome : Fragment() {
         }
         if (id == R.id.settings) {
 
-            Toast.makeText(context, "sorry, COMMING SOON", Toast.LENGTH_SHORT).show()
-
-//            startActivity(Intent(context, LoginActivity::class.java))
+            startActivity(Intent(context, FAQ::class.java))
         }
         if (id == R.id.developer) {
             val intent = Intent(context, DeveloperActivity::class.java)

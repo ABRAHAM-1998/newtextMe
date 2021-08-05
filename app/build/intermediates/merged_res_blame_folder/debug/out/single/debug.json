@@ -156,6 +156,10 @@
         "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/debug/layout_activity_faq.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_faq.xml"
+    },
+    {
         "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/debug/drawable_message_to_call.xml.flat",
         "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/message_to_call.xml"
     },

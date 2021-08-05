@@ -164,6 +164,10 @@
         "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_chat.xml"
     },
     {
+        "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/layout_activity_faq.xml.flat",
+        "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/layout/activity_faq.xml"
+    },
+    {
         "merged": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/build/intermediates/res/merged/release/drawable_bg_msg_from.xml.flat",
         "source": "/home/seven-zero-nine/AndroidStudioProjects/TexTMe/app/src/main/res/drawable/bg_msg_from.xml"
     },
